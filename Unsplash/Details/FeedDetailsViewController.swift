@@ -118,7 +118,6 @@ extension FeedDetailsViewController: FeedDetailsErrorView, FeedDetailsView {
         locationLabel?.text = details.location.name
         descriptionLabel?.text = "Description: " + details.description
         
-        let likeResource = (details.isLiked) ? "hand.thumbsup.fill" : "hand.thumbsup"
         likeButton?.isUserInteractionEnabled = true
         likeButton?.setTitle("Like", for: .normal)
         updateButton(details.isLiked)
